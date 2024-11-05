@@ -3,14 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@babel/core": "^7.16.0",
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.16.0",
+    "@babel/preset-react": "^7.16.0",
+    "@react-spring/core": "^9.7.5",
     "@react-three/drei": "^4.0.0",
     "@react-three/fiber": "^6.2.2",
+    "babel-preset-react-app": "^10.0.0",
     "cross-env": "^7.0.3",
     "react": "^18.0.0-alpha-ed6c091fe-20210701",
     "react-device-detect": "^1.17.0",
     "react-dom": "^18.0.0-alpha-ed6c091fe-20210701",
-    "react-scripts": "4.0.3",
+    "react-scripts": "^5.0.1",
     "three": "^0.135.0",
     "zustand": "^3.5.2"
   },
@@ -37,5 +41,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-optional-chaining": "^7.21.0",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   }
 }
