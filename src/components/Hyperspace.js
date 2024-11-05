@@ -2,7 +2,6 @@ import { useFrame, useThree } from '@react-three/fiber'
 import { useTexture } from '@react-three/drei'
 import { useRef, useLayoutEffect, useState, Suspense, useMemo } from 'react'
 import { MirroredRepeatWrapping, Vector2, BackSide } from 'three'
-
 import { useStore, mutation } from '../state/useStore'
 import { PLANE_SIZE, COLORS, LEVEL_SIZE } from '../constants'
 
@@ -24,8 +23,6 @@ function HyperspaceTunnel() {
 
   const repeatX = useRef(10)
   const repeatY = useRef(4)
-
-
   const [lathe] = useState(() => {
     const points = [
       new Vector2(100, 150),
@@ -71,7 +68,6 @@ function HyperspaceTunnel() {
         tunnel2.current.position.z = lowerBound - 50
       }
     }
-
     if (ship.current) {
       if ((ship.current.position.z < lowerBound && ship.current.position.z > upperBound) ||
         (ship.current.position.z < prevLowerBound && ship.current.position.z > prevUpperBound)) {
