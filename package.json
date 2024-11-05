@@ -3,17 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@react-three/drei": "^8.0.0",
-    "@react-three/fiber": "^7.0.0",
+    "@react-three/drei": "^4.0.0",
+    "@react-three/fiber": "^6.2.2",
     "cross-env": "^7.0.3",
-    "process": "^0.11.10",
     "react": "^18.0.0-alpha-ed6c091fe-20210701",
     "react-device-detect": "^1.17.0",
     "react-dom": "^18.0.0-alpha-ed6c091fe-20210701",
-    "react-scripts": "^5.0.0",
-    "three": "^0.140.0",
-    "three-mesh-bvh": "^0.8.2",
-    "three-stdlib": "^2.33.0",
+    "react-scripts": "4.0.3",
+    "three": "^0.135.0",
     "zustand": "^3.5.2"
   },
   "scripts": {
@@ -39,8 +36,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   }
 }
