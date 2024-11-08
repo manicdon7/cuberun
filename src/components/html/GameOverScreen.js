@@ -8,6 +8,7 @@ const GameOverScreen = () => {
   const [shown, setShown] = useState(false);
   const [opaque, setOpaque] = useState(false);
   const [highScores, setHighscores] = useState(previousScores);
+  const userId = window.location.pathname.split('/').pop();
 
   const gameOver = useStore((s) => s.gameOver);
   const score = useStore((s) => s.score);
@@ -50,7 +51,7 @@ const GameOverScreen = () => {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          user_id: 'user1234',
+          user_id: userId,
           score: parseInt(score, 10),
           type: 'game2',
         }),
@@ -79,7 +80,7 @@ const GameOverScreen = () => {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          user_id: 'user1234',
+          user_id: userId,
           new_score: parseInt(newScore, 10),
           type: 'game2',
         }),
